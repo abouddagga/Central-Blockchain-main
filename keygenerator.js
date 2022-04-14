@@ -1,9 +1,9 @@
 const EC = require('elliptic').ec;
-const ec = new EC('secp256k1'); //a bit coin wallet algorithm
+const ec = new EC('secp256k1');
 
 const key = ec.genKeyPair();
-const publicKey = key.getPublic('hex'); //public key in hexadecimal form
-const privateKey = key.getPrivate('hex'); //private key in  hexadecimal form.
+const publicKey = key.getPublic('hex');
+const privateKey = key.getPrivate('hex');
 
 console.log();
 console.log("Private key: ", privateKey);
